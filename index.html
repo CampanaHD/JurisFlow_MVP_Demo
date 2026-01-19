@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafio 90 Dias Low Carb + HIIT</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f2f4f6;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #0f5132, #1db954);
+  color: #fff;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 820px;
+  margin: auto;
+}
+
+/* CTA */
+.cta {
+  display: inline-block;
+  background: linear-gradient(135deg, #ffb703, #ffd166);
+  color: #000;
+  padding: 18px 42px;
+  border-radius: 50px;
+  font-size: 22px;
+  font-weight: 800;
+  text-decoration: none;
+  margin-top: 30px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta:hover {
+  transform: scale(1.05);
+}
+
+.cta small {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* SECTIONS */
+.section {
+  background: #fff;
+  margin: 35px 0;
+  padding: 45px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  font-size: 22px;
+  margin-top: 25px;
+}
+
+/* LIST */
+ul li {
+  margin-bottom: 10px;
+}
+
+/* HIGHLIGHT */
+.highlight {
+  background: linear-gradient(135deg, #e9f7ef, #ffffff);
+  border-left: 6px solid #1db954;
+}
+
+/* SOCIAL PROOF */
+.social-proof {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.testimonial {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 15px;
+  border-left: 5px solid #1db954;
+}
+
+.testimonial strong {
+  display: block;
+  margin-top: 10px;
+}
+
+/* PRICE */
+.price-box {
+  background: linear-gradient(135deg, #0f5132, #198754);
+  color: #fff;
+  text-align: center;
+}
+
+.old-price {
+  text-decoration: line-through;
+  opacity: 0.6;
+  font-size: 18px;
+}
+
+.price {
+  font-size: 58px;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+/* BADGES */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.badge {
+  background: #fff;
+  color: #0f5132;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  padding: 30px;
+}
+
+/* MOBILE CTA FIXO */
+.mobile-cta {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .hero h1 { font-size: 28px; }
+  .hero p { font-size: 18px; }
+  .section { padding: 30px; }
+
+  .mobile-cta {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0f5132;
+    padding: 12px;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .mobile-cta a {
+    background: #ffb703;
+    color: #000;
+    padding: 14px 25px;
+    border-radius: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Emagreça em Casa em 90 Dias<br>Sem Academia e Sem Dietas Loucas</h1>
+  <p>
+    Método simples de Low Carb + HIIT Cardio criado para pessoas comuns
+    que querem emagrecer de verdade.
+  </p>
+  <a href="#comprar" class="cta">
+    QUERO COMEÇAR AGORA
+    <small>Acesso imediato • Apenas R$ 17,90</small>
+  </a>
+</section>
+
+<div class="container">
+
+<!-- DOR -->
+<section class="section">
+  <h2>⚠️ Por que você ainda não conseguiu emagrecer?</h2>
+  <ul>
+    <li>Falta de tempo para academia</li>
+    <li>Dietas difíceis de manter</li>
+    <li>Falta de um plano claro</li>
+  </ul>
+  <p><strong>Esse método resolve exatamente isso.</strong></p>
+</section>
+
+<!-- SOLUÇÃO -->
+<section class="section highlight">
+  <h2>✅ O Que Você Vai Receber</h2>
+  <ul>
+    <li>✔ Cardápio Low Carb completo</li>
+    <li>✔ Receitas simples e acessíveis</li>
+    <li>✔ Treinos HIIT de 30 minutos em casa</li>
+    <li>✔ Plano estruturado por 90 dias</li>
+    <li>🎁 Aula bônus de Cardio Step</li>
+  </ul>
+
+  <div style="text-align:center;">
+    <a href="#comprar" class="cta">
+      QUERO MEU ACESSO
+      <small>Começar hoje</small>
+    </a>
+  </div>
+</section>
+
+<!-- PROVA SOCIAL -->
+<section class="section">
+  <h2>⭐ Pessoas Reais, Resultados Reais</h2>
+
+  <div class="social-proof">
+    <div class="testimonial">
+      “Nunca consegui manter dieta antes. Esse método funcionou.”
+      <strong>— Mariana, 34 anos</strong>
+    </div>
+
+    <div class="testimonial">
+      “Treinar em casa foi a virada de chave pra mim.”
+      <strong>— Carlos, 41 anos</strong>
+    </div>
+
+    <div class="testimonial">
+      “Simples, organizado e barato. Valeu muito.”
+      <strong>— Juliana, 29 anos</strong>
+    </div>
+  </div>
+</section>
+
+<!-- OBJEÇÕES -->
+<section class="section">
+  <h2>❓ Ainda em dúvida?</h2>
+
+  <h3>⏰ Pouco tempo?</h3>
+  <p>Treinos rápidos, feitos em casa.</p>
+
+  <h3>🍽 Medo de passar fome?</h3>
+  <p>Plano focado em saciedade.</p>
+
+  <h3>💰 É barato demais?</h3>
+  <p>Preço promocional para facilitar o acesso.</p>
+</section>
+
+<!-- PREÇO -->
+<section class="section price-box" id="comprar">
+  <h2>🚀 Comece Hoje Mesmo</h2>
+
+  <p class="old-price">De R$ 197,00</p>
+  <p class="price">R$ 17,90</p>
+
+  <p>Menos que uma pizza • Acesso vitalício</p>
+
+  <a href="SEU_LINK_DE_CHECKOUT_AQUI" class="cta">
+    SIM, QUERO EMAGRECER
+    <small>Acesso imediato • Garantia 7 dias</small>
+  </a>
+
+  <div class="badges">
+    <div class="badge">✔ Compra Segura</div>
+    <div class="badge">✔ Acesso Imediato</div>
+    <div class="badge">✔ 100% Digital</div>
+    <div class="badge">✔ Garantia 7 Dias</div>
+  </div>
+
+  <p style="margin-top:20px; font-size:14px; opacity:0.9;">
+    ⚠️ Valor promocional por tempo limitado
+  </p>
+</section>
+
+</div>
+
+<!-- CTA FIXO MOBILE -->
+<div class="mobile-cta">
+  <a href="SEU_LINK_DE_CHECKOUT_AQUI">
+    COMPRAR AGORA • R$ 17,90
+  </a>
+</div>
+
+<footer class="footer">
+  <p>Este produto não substitui acompanhamento médico ou nutricional.</p>
+  <p>© 2026 – Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
