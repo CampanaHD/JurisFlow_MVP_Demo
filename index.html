@@ -1,188 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tatiana Lopes | Carreira Remota - Formações para desenvolver competências valorizadas pelo mercado digital.">
-  <title>Tatiana Lopes | Carreira Remota</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JurisFlow — Demonstração</title>
+<style>
+:root{--navy:#10233f;--blue:#1769e0;--bg:#f3f6fb;--ink:#17253b;--muted:#6c7a90;--line:#e2e8f1;--white:#fff;--green:#16845b;--red:#d94b58;--amber:#bd7a14}
+*{box-sizing:border-box}body{margin:0;font:14px/1.45 Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:9px;padding:10px 13px;background:var(--blue);color:#fff;font-weight:650}button.secondary{background:#eaf1fd;color:#1c57a6}button.ghost{background:transparent;color:var(--muted);border:1px solid var(--line)}button.danger{background:#fff0f1;color:var(--red)}input,select,textarea{width:100%;padding:10px 11px;border:1px solid #d9e1ed;border-radius:8px;background:#fff;color:var(--ink)}textarea{min-height:80px;resize:vertical}label{display:block;color:var(--muted);font-size:12px;font-weight:650;margin:8px 0 5px}.app{display:grid;grid-template-columns:235px 1fr;min-height:100vh}.sidebar{background:var(--navy);color:#fff;padding:22px 14px;display:flex;flex-direction:column;gap:8px}.brand{font-size:22px;font-weight:800;letter-spacing:-.5px;padding:0 10px 18px}.brand small{display:block;font-size:11px;color:#a8c2ed;font-weight:500;letter-spacing:0}.nav{display:flex;gap:10px;align-items:center;width:100%;text-align:left;background:transparent;color:#c8d5e9;padding:11px 12px;font-weight:600}.nav.active,.nav:hover{background:#1e3a62;color:#fff}.nav span{width:20px;text-align:center}.sidefoot{margin-top:auto;color:#b5c4dc;font-size:12px;padding:12px}.main{min-width:0}.topbar{background:#fff;border-bottom:1px solid var(--line);padding:14px 24px;display:flex;justify-content:space-between;align-items:center;gap:12px}.topbar .sub{color:var(--muted);font-size:12px}.content{padding:24px;max-width:1500px;margin:auto}.pagehead{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:20px}.pagehead h1{margin:0;font-size:25px;letter-spacing:-.6px}.pagehead p{margin:5px 0 0;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:18px}.card,.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px;box-shadow:0 3px 12px #10233f06}.metric{font-size:27px;font-weight:800;margin:6px 0}.muted{color:var(--muted)}.grid2{display:grid;grid-template-columns:1.25fr 1fr;gap:16px}.panel h3{margin:0 0 14px;font-size:15px}.toolbar{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-bottom:13px}.toolbar input{max-width:320px}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;white-space:nowrap}th,td{text-align:left;border-bottom:1px solid #edf1f6;padding:11px 9px;font-size:13px}th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.4px}tr:last-child td{border-bottom:0}.pill{display:inline-block;border-radius:99px;padding:4px 8px;font-size:11px;font-weight:700;background:#edf3ff;color:#285eb4}.pill.green{background:#e7f7ef;color:var(--green)}.pill.red{background:#fff0f1;color:var(--red)}.pill.amber{background:#fff4dd;color:var(--amber)}.empty{padding:24px;text-align:center;color:var(--muted)}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}.formgrid .wide{grid-column:1/-1}.modal{position:fixed;inset:0;background:#09172a80;display:none;align-items:center;justify-content:center;padding:18px;z-index:5}.modal.show{display:flex}.modalbox{background:#fff;border-radius:16px;padding:22px;width:min(650px,100%);max-height:90vh;overflow:auto}.modalhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.modalhead h2{margin:0}.modalfoot{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}.notice{border:1px solid #f0dba7;background:#fff9e9;color:#76510c;padding:12px 14px;border-radius:10px;margin-bottom:16px}.hero{background:linear-gradient(120deg,#10233f,#1b4c89);color:white;border-radius:15px;padding:20px;margin-bottom:18px}.hero h2{margin:0 0 6px}.hero p{margin:0;color:#d2e2fa}.quick{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}.quick button{background:#fff;color:#174d9b}.split{display:grid;grid-template-columns:1fr 1fr;gap:16px}.listitem{padding:11px 0;border-bottom:1px solid #edf1f6;display:flex;justify-content:space-between;gap:12px}.listitem:last-child{border:0}.login{min-height:100vh;display:grid;place-items:center;padding:20px;background:linear-gradient(135deg,#10233f,#1b4c89)}.loginbox{width:min(420px,100%);background:#fff;padding:30px;border-radius:18px}.loginbox h1{margin:0}.loginbox p{color:var(--muted)}.toast{position:fixed;right:20px;bottom:20px;background:#142945;color:#fff;padding:12px 16px;border-radius:10px;display:none;z-index:8}.toast.show{display:block}.mobilemenu{display:none}
+@media(max-width:900px){.app{grid-template-columns:1fr}.sidebar{display:none}.sidebar.open{display:flex;position:fixed;z-index:6;inset:0 auto 0 0;width:250px}.mobilemenu{display:inline-block}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.grid2,.split{grid-template-columns:1fr}.content{padding:16px}.topbar{padding:12px 16px}.pagehead{align-items:flex-start}.pagehead h1{font-size:22px}}
+@media(max-width:480px){.cards{grid-template-columns:1fr 1fr;gap:8px}.card{padding:12px}.metric{font-size:22px}.formgrid{grid-template-columns:1fr}.formgrid .wide{grid-column:auto}.pagehead{flex-direction:column}.pagehead button{width:100%}}
+</style>
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav">
-      <a href="#inicio" class="brand">Raízes <span>&</span> Roteiros</a>
-      <a href="#formacoes" class="nav-cta">Conhecer formações</a>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-glow hero-glow-1"></div>
-      <div class="hero-glow hero-glow-2"></div>
-
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <span class="eyebrow">CARREIRA REMOTA • MERCADO DIGITAL</span>
-          <h1>Você não precisa apenas encontrar uma vaga remota.</h1>
-          <h2>Você precisa estar preparada para ser escolhida por ela.</h2>
-
-          <p class="lead">
-            O mercado remoto abriu novas possibilidades de carreira. Mas existe uma diferença entre procurar uma oportunidade e estar qualificada para aproveitá-la.
-          </p>
-
-          <p>
-            Eu sou <strong>Tatiana Lopes</strong>, CEO da Agência Raízes & Roteiros, infoprodutora global, mentora de carreira e criadora de formações profissionais para o mercado digital.
-          </p>
-
-          <p>
-            Criei uma jornada para quem quer entender as novas profissões digitais, desenvolver competências valorizadas pelo mercado e construir uma carreira que possa ser exercida de onde estiver.
-          </p>
-
-          <div class="skills">
-            <span>Marketing</span><span>Social Media</span><span>Tráfego</span><span>Copy</span>
-            <span>Atendimento</span><span>SDR</span><span>Closer</span><span>Gestão de Agenda</span><span>IA</span>
-          </div>
-
-          <a href="#formacoes" class="btn btn-primary">QUERO CONHECER AS FORMAÇÕES</a>
-        </div>
-
-        <div class="hero-photo reveal delay-1">
-          <div class="photo-frame">
-            <img src="assets/tatiana-lopes.png" alt="Tatiana Lopes">
-            <div class="photo-badge">
-              <strong>Tatiana Lopes</strong>
-              <span>CEO • Mentora • Infoprodutora Global</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="statement section-dark">
-      <div class="container narrow reveal">
-        <span class="eyebrow light">UMA NOVA PERSPECTIVA</span>
-        <h2>Talvez o que esteja faltando não seja uma vaga.</h2>
-        <h3>Talvez esteja faltando uma profissão.</h3>
-
-        <p>
-          Você pesquisa vagas remotas, entra em plataformas, encontra oportunidades e pensa:
-          <strong>“Eu queria muito trabalhar assim…”</strong>
-        </p>
-
-        <p>
-          Mas quando olha os requisitos, aparecem experiência, ferramentas, comunicação, vendas, marketing, tecnologia, organização e atendimento.
-        </p>
-
-        <div class="quote">“Mas por onde eu começo?”</div>
-
-        <p>
-          É justamente aí que muitas pessoas ficam presas: procuram uma oportunidade antes de desenvolver as competências necessárias para aproveitá-la.
-        </p>
-      </div>
-    </section>
-
-    <section class="about">
-      <div class="container split">
-        <div class="about-card reveal">
-          <span class="eyebrow">O MERCADO MUDOU</span>
-          <h2>E as formas de construir uma carreira também.</h2>
-          <p>
-            Hoje, uma pessoa pode trabalhar remotamente em diferentes áreas do mercado digital. Social Media, Tráfego, Copywriting, Atendimento, SDR, Closer, Gestão de Agenda e Inteligência Artificial são apenas algumas das possibilidades.
-          </p>
-          <p>
-            Eu não quero simplesmente colocar uma lista de vagas remotas na sua frente. Quero ajudar você a se preparar para elas.
-          </p>
-        </div>
-
-        <div class="checklist-card reveal delay-1">
-          <h3>Você precisa entender:</h3>
-          <ul>
-            <li>O que o mercado procura.</li>
-            <li>Quais profissões existem.</li>
-            <li>Quais competências são necessárias.</li>
-            <li>Quais ferramentas você precisa dominar.</li>
-            <li>Como se posicionar.</li>
-            <li>Como apresentar seu trabalho.</li>
-            <li>Como conversar com empresas e clientes.</li>
-            <li><strong>Qual caminho profissional faz sentido para você.</strong></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="courses" id="formacoes">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">CONHEÇA AS FORMAÇÕES</span>
-          <h2>Escolha a habilidade que pode abrir sua próxima oportunidade.</h2>
-          <p>Formações práticas para desenvolver competências valorizadas no mercado digital e remoto.</p>
-        </div>
-
-        <div class="course-grid">
-          <article class="course-card featured reveal">
-            <div class="course-number">01</div>
-            <span class="tag">FORMAÇÃO MULTIPROFISSIONAL</span>
-            <h3>RBE — Remote Business Executive</h3>
-            <h4>Uma formação. Múltiplas possibilidades de carreira.</h4>
-            <p>
-              O RBE foi criado para quem quer desenvolver competências para atuar no mercado digital e ampliar suas possibilidades profissionais no trabalho remoto.
-            </p>
-            <p class="course-areas">Social Media • Gestão de Tráfego • Gestão de Agenda • Copywriting • SDR • Closer</p>
-            <a href="#" class="btn btn-card">QUERO CONHECER O RBE</a>
-          </article>
-
-          <article class="course-card reveal delay-1">
-            <div class="course-number">02</div>
-            <span class="tag">VENDAS REMOTAS</span>
-            <h3>Closer Elite</h3>
-            <h4>Você gosta de conversar, entender pessoas e negociar?</h4>
-            <p>
-              Então talvez vendas seja uma das profissões que você deveria conhecer. Desenvolva habilidades para conduzir conversas, entender necessidades e transformar oportunidades em vendas.
-            </p>
-            <a href="#" class="btn btn-card">QUERO CONHECER O CLOSER ELITE</a>
-          </article>
-
-          <article class="course-card reveal delay-2">
-            <div class="course-number">03</div>
-            <span class="tag">NOVA FORMAÇÃO</span>
-            <h3>Sua próxima especialização</h3>
-            <h4>Descubra uma nova possibilidade profissional.</h4>
-            <p>
-              Espaço reservado para a terceira formação da Tatiana. Aqui você pode apresentar a proposta, transformação principal e para quem o curso foi criado.
-            </p>
-            <a href="#" class="btn btn-card">QUERO CONHECER A FORMAÇÃO</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta">
-      <div class="container cta-box reveal">
-        <div>
-          <span class="eyebrow light">SEU PRÓXIMO PASSO</span>
-          <h2>Sua carreira pode começar de um lugar diferente.</h2>
-          <p>
-            Você não precisa ter todas as respostas hoje. Mas precisa dar o primeiro passo para desenvolver as competências que podem transformar a sua carreira.
-          </p>
-        </div>
-        <a href="#formacoes" class="btn btn-light">QUERO COMEÇAR MINHA JORNADA</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-content">
-      <div>
-        <strong>Raízes & Roteiros</strong>
-        <span>Carreira • Formação • Mercado Digital</span>
-      </div>
-      <p>© 2026 Raízes & Roteiros. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<div id="login" class="login"><div class="loginbox"><div class="brand" style="color:#10233f;padding:0">⚖ JurisFlow<small style="color:#6c7a90">GESTÃO JURÍDICA SIMPLIFICADA</small></div><h1 style="margin-top:24px">Acesse a demonstração</h1><p>Ambiente de demonstração com dados fictícios, salvo neste navegador.</p><label>Seu nome</label><input id="loginName" placeholder="Ex.: Dr. Marcelo Silva" value="Dr. Marcelo Silva"><label>Nome do escritório</label><input id="officeName" placeholder="Ex.: Silva Advocacia" value="Silva Advocacia"><button style="width:100%;margin-top:16px" onclick="enterApp()">Entrar na demonstração</button><p style="font-size:11px">Não use dados reais de clientes nesta versão. Ela não possui autenticação segura nem sincronização entre dispositivos.</p></div></div>
+<div id="app" class="app" style="display:none">
+<aside id="sidebar" class="sidebar"><div class="brand">⚖ JurisFlow<small>GESTÃO JURÍDICA</small></div>
+<button class="nav active" data-page="dashboard"><span>▦</span> Visão geral</button><button class="nav" data-page="clients"><span>♙</span> Clientes</button><button class="nav" data-page="cases"><span>§</span> Processos</button><button class="nav" data-page="deadlines"><span>◷</span> Agenda e prazos</button><button class="nav" data-page="tasks"><span>☑</span> Tarefas</button><button class="nav" data-page="finance"><span>R$</span> Financeiro</button><button class="nav" data-page="documents"><span>▤</span> Documentos</button><button class="nav" data-page="reports"><span>▥</span> Relatórios</button><button class="nav" data-page="portal"><span>↗</span> Portal do cliente</button><button class="nav" data-page="assistant"><span>✧</span> Assistente IA (demo)</button>
+<div class="sidefoot">Versão demonstrativa · 2026<br>Dados locais deste navegador</div></aside>
+<main class="main"><header class="topbar"><div style="display:flex;align-items:center;gap:10px"><button class="mobilemenu secondary" onclick="document.getElementById('sidebar').classList.toggle('open')">☰</button><div><strong id="officeTitle">Silva Advocacia</strong><div class="sub">Painel de gestão do escritório</div></div></div><div style="display:flex;align-items:center;gap:10px"><span id="userTitle" class="muted">Dr. Marcelo Silva</span><button class="ghost" onclick="resetDemo()">Reiniciar demo</button></div></header><div class="content" id="content"></div></main></div>
+<div id="modal" class="modal"><div class="modalbox"><div class="modalhead"><h2 id="modalTitle">Novo registro</h2><button class="ghost" onclick="closeModal()">✕</button></div><div id="modalBody"></div><div class="modalfoot"><button class="ghost" onclick="closeModal()">Cancelar</button><button onclick="saveModal()">Salvar</button></div></div></div><div id="toast" class="toast"></div>
+<script>
+const KEYS=['clients','cases','deadlines','tasks','finance','documents'];
+let db={},page='dashboard',modalType='',editId=null,loggedName='Dr. Marcelo Silva',office='Silva Advocacia';
+const today=()=>new Date().toISOString().slice(0,10),fmtDate=s=>s?new Date(s+'T12:00:00').toLocaleDateString('pt-BR'):'—',money=n=>Number(n||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+function seed(){db={clients:[{id:id(),name:'Ana Costa',cpf:'DADO FICTÍCIO',phone:'(11) 90000-0001',email:'ana@example.test',type:'Pessoa física',notes:'Cliente de demonstração'},{id:id(),name:'João da Silva',cpf:'DADO FICTÍCIO',phone:'(11) 90000-0002',email:'joao@example.test',type:'Pessoa física',notes:''}],cases:[{id:id(),number:'DEMO-0001',title:'Ação de demonstração — Ana Costa',client:'Ana Costa',area:'Cível',status:'Em andamento',next:today(),notes:'Processo fictício para demonstração'},{id:id(),number:'DEMO-0002',title:'Consulta contratual — João da Silva',client:'João da Silva',area:'Contratos',status:'Em análise',next:'',notes:''}],deadlines:[{id:id(),title:'Revisar documentos do caso DEMO-0001',date:today(),time:'15:00',kind:'Tarefa',status:'Pendente',caseNo:'DEMO-0001'},{id:id(),title:'Reunião de demonstração',date:today(),time:'16:30',kind:'Reunião',status:'Confirmado',caseNo:'—'}],tasks:[{id:id(),title:'Preparar checklist inicial',owner:'Dr. Marcelo',due:today(),priority:'Alta',status:'Pendente',caseNo:'DEMO-0001'}],finance:[{id:id(),description:'Honorários — cliente fictício',client:'Ana Costa',kind:'Recebimento',amount:850,status:'Pendente',due:today()},{id:id(),description:'Despesa de demonstração',client:'Escritório',kind:'Despesa',amount:120,status:'Pago',due:today()}],documents:[{id:id(),name:'Checklist de documentos (exemplo)',type:'Modelo',date:today(),notes:'Registro demonstrativo; nenhum arquivo anexado.'}]};saveDB()}
+function id(){return Math.random().toString(36).slice(2,10)}function saveDB(){localStorage.setItem('jurisflow_demo_db',JSON.stringify(db))}function loadDB(){try{db=JSON.parse(localStorage.getItem('jurisflow_demo_db'))||{};if(!KEYS.every(k=>Array.isArray(db[k])))seed()}catch(e){seed()}}
+function enterApp(){loggedName=document.getElementById('loginName').value.trim()||'Advogado(a)';office=document.getElementById('officeName').value.trim()||'Meu escritório';document.getElementById('login').style.display='none';document.getElementById('app').style.display='grid';document.getElementById('officeTitle').textContent=office;document.getElementById('userTitle').textContent=loggedName;loadDB();render()}
+function resetDemo(){if(confirm('Apagar alterações locais e restaurar os dados fictícios?')){localStorage.removeItem('jurisflow_demo_db');seed();render();toast('Demonstração reiniciada')}}
+document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>{page=b.dataset.page;document.querySelectorAll('.nav').forEach(x=>x.classList.toggle('active',x===b));document.getElementById('sidebar').classList.remove('open');render()});
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function head(title,sub,btn=''){return `<div class="pagehead"><div><h1>${title}</h1><p>${sub}</p></div>${btn}</div>`}
+function buttonNew(type,label){return `<button onclick="openModal('${type}')">＋ ${label}</button>`}
+function table(headers,rows){return `<div class="tablewrap"><table><thead><tr>${headers.map(x=>`<th>${x}</th>`).join('')}<th>Ações</th></tr></thead><tbody>${rows.length?rows.join(''):`<tr><td colspan="${headers.length+1}" class="empty">Nenhum registro encontrado.</td></tr>`}</tbody></table></div>`}
+function actions(type,x){return `<button class="secondary" onclick="openModal('${type}','${x.id}')">Editar</button> <button class="ghost" onclick="del('${type}','${x.id}')">Excluir</button>`}
+function status(s){let c=/pago|conclu|confirmado|em andamento/i.test(s)?'green':/urgente|atras|alta/i.test(s)?'red':/pendente|análise|aguardando/i.test(s)?'amber':'';return `<span class="pill ${c}">${esc(s||'—')}</span>`}
+function render(){const c=document.getElementById('content');let html='';const clients=db.clients||[],cases=db.cases||[],deadlines=db.deadlines||[],tasks=db.tasks||[],finance=db.finance||[],docs=db.documents||[];
+if(page==='dashboard'){let pending=deadlines.filter(x=>x.status==='Pendente').length+tasks.filter(x=>x.status!=='Concluída').length;html=head('Visão geral','Resumo da rotina do escritório')+`<div class="notice">⚠ Ambiente demonstrativo. Todos os registros iniciais são fictícios e ficam salvos apenas neste navegador. Não insira dados reais ou confidenciais.</div><div class="hero"><h2>Olá, ${esc(loggedName)} 👋</h2><p>Aqui está um resumo da sua rotina. Use os atalhos para explorar a demonstração.</p><div class="quick"><button onclick="openModal('clients')">＋ Novo cliente</button><button onclick="openModal('cases')">＋ Novo processo</button><button onclick="openModal('deadlines')">＋ Novo compromisso</button><button onclick="openModal('tasks')">＋ Nova tarefa</button></div></div><div class="cards">${[['Clientes',clients.length,'♙'],['Processos',cases.length,'§'],['Prazos/agenda',deadlines.length,'◷'],['Pendências',pending,'!']].map(a=>`<div class="card"><div class="muted">${a[2]} ${a[0]}</div><div class="metric">${a[1]}</div><div class="muted">Registros na demonstração</div></div>`).join('')}</div><div class="grid2"><div class="panel"><h3>Próximos compromissos</h3>${deadlines.slice().sort((a,b)=>(a.date||'').localeCompare(b.date||'')).slice(0,5).map(x=>`<div class="listitem"><div><strong>${esc(x.title)}</strong><div class="muted">${fmtDate(x.date)} · ${esc(x.time||'')}</div></div>${status(x.status)}</div>`).join('')||'<div class="empty">Sem compromissos.</div>'}</div><div class="panel"><h3>Tarefas em aberto</h3>${tasks.filter(x=>x.status!=='Concluída').slice(0,5).map(x=>`<div class="listitem"><div><strong>${esc(x.title)}</strong><div class="muted">${esc(x.owner)} · ${fmtDate(x.due)}</div></div>${status(x.priority)}</div>`).join('')||'<div class="empty">Nenhuma tarefa em aberto.</div>'}</div></div>`}
+if(page==='clients')html=head('Clientes','Cadastre e acompanhe os contatos do escritório.',buttonNew('clients','Novo cliente'))+`<div class="panel"><div class="toolbar"><input id="search" placeholder="Buscar cliente..." oninput="filterRows()"></div><div id="tableArea">${table(['Nome','Telefone','E-mail','Tipo'],clients.map(x=>`<tr data-search="${esc((x.name+' '+x.phone+' '+x.email).toLowerCase())}"><td><strong>${esc(x.name)}</strong></td><td>${esc(x.phone)}</td><td>${esc(x.email)}</td><td>${esc(x.type)}</td><td>${actions('clients',x)}</td></tr>`))}</div></div>`;
+if(page==='cases')html=head('Processos e casos','Acompanhe os casos cadastrados manualmente.',buttonNew('cases','Novo processo'))+`<div class="panel">${table(['Número','Caso','Cliente','Área','Status','Próximo prazo'],cases.map(x=>`<tr><td>${esc(x.number)}</td><td><strong>${esc(x.title)}</strong></td><td>${esc(x.client)}</td><td>${esc(x.area)}</td><td>${status(x.status)}</td><td>${fmtDate(x.next)}</td><td>${actions('cases',x)}</td></tr>`))}</div>`;
+if(page==='deadlines')html=head('Agenda e prazos','Registre compromissos e prazos; confira-os com as fontes oficiais.',buttonNew('deadlines','Novo compromisso'))+`<div class="panel">${table(['Data','Hora','Compromisso','Tipo','Caso','Status'],deadlines.slice().sort((a,b)=>(a.date||'').localeCompare(b.date||'')).map(x=>`<tr><td>${fmtDate(x.date)}</td><td>${esc(x.time)}</td><td><strong>${esc(x.title)}</strong></td><td>${esc(x.kind)}</td><td>${esc(x.caseNo)}</td><td>${status(x.status)}</td><td>${actions('deadlines',x)}</td></tr>`))}</div><p class="muted">Os lembretes desta versão são registros visuais; não há envio de notificações externas nem integração automática com tribunais.</p>`;
+if(page==='tasks')html=head('Tarefas','Organize atividades e responsáveis.',buttonNew('tasks','Nova tarefa'))+`<div class="panel">${table(['Tarefa','Responsável','Vencimento','Prioridade','Status','Caso'],tasks.map(x=>`<tr><td><strong>${esc(x.title)}</strong></td><td>${esc(x.owner)}</td><td>${fmtDate(x.due)}</td><td>${status(x.priority)}</td><td>${status(x.status)}</td><td>${esc(x.caseNo)}</td><td>${actions('tasks',x)}</td></tr>`))}</div>`;
+if(page==='finance'){let rec=finance.filter(x=>x.kind==='Recebimento').reduce((a,x)=>a+Number(x.amount),0),paid=finance.filter(x=>x.kind==='Despesa').reduce((a,x)=>a+Number(x.amount),0);html=head('Financeiro','Controle demonstrativo de honorários, recebimentos e despesas.',buttonNew('finance','Novo lançamento'))+`<div class="cards"><div class="card"><div class="muted">Recebimentos cadastrados</div><div class="metric">${money(rec)}</div></div><div class="card"><div class="muted">Despesas cadastradas</div><div class="metric">${money(paid)}</div></div><div class="card"><div class="muted">Saldo demonstrativo</div><div class="metric">${money(rec-paid)}</div></div><div class="card"><div class="muted">Lançamentos</div><div class="metric">${finance.length}</div></div></div><div class="panel">${table(['Descrição','Cliente','Tipo','Valor','Vencimento','Status'],finance.map(x=>`<tr><td>${esc(x.description)}</td><td>${esc(x.client)}</td><td>${esc(x.kind)}</td><td>${money(x.amount)}</td><td>${fmtDate(x.due)}</td><td>${status(x.status)}</td><td>${actions('finance',x)}</td></tr>`))}</div>`}
+if(page==='documents')html=head('Documentos e modelos','Organize referências e modelos; esta versão não faz upload seguro de arquivos.',buttonNew('documents','Novo registro'))+`<div class="notice">Esta tela registra metadados e notas. Armazenamento de arquivos, controle de versões e geração automática de documentos ainda precisam ser implementados.</div><div class="panel">${table(['Nome','Tipo','Data','Observações'],docs.map(x=>`<tr><td><strong>${esc(x.name)}</strong></td><td>${esc(x.type)}</td><td>${fmtDate(x.date)}</td><td>${esc(x.notes)}</td><td>${actions('documents',x)}</td></tr>`))}</div>`;
+if(page==='reports')html=head('Relatórios','Visão resumida dos registros de demonstração.')+`<div class="cards">${[['Clientes',clients.length],['Processos',cases.length],['Tarefas abertas',tasks.filter(x=>x.status!=='Concluída').length],['Honorários pendentes',money(finance.filter(x=>x.kind==='Recebimento'&&x.status==='Pendente').reduce((a,x)=>a+Number(x.amount),0))]].map(x=>`<div class="card"><div class="muted">${x[0]}</div><div class="metric">${x[1]}</div></div>`).join('')}</div><div class="panel"><h3>Exportar dados da demonstração</h3><p class="muted">Baixe os registros fictícios em JSON para avaliação local.</p><button onclick="exportData()">Exportar JSON</button></div>`;
+if(page==='portal')html=head('Portal do cliente','Prévia do que um cliente poderia consultar.')+`<div class="notice">Portal ilustrativo: não há contas externas, permissões individuais ou acesso público nesta versão. Não compartilhe este navegador como se fosse um portal seguro.</div><div class="panel"><h3>Prévia do portal</h3><p>Olá, Ana Costa (cliente fictícia).</p><div class="listitem"><div><strong>Atualização do caso DEMO-0001</strong><div class="muted">O escritório registrou uma atualização demonstrativa.</div></div>${status('Informativo')}</div><div class="listitem"><div><strong>Documento pendente</strong><div class="muted">Exemplo de solicitação de documento.</div></div>${status('Pendente')}</div></div>`;
+if(page==='assistant')html=head('Assistente de IA — demonstração','Exemplo de fluxo; não conectado a um modelo de IA.')+`<div class="notice">Este protótipo não envia dados a uma IA nem gera aconselhamento jurídico. Não cole documentos reais. A integração real exigirá um provedor de IA, chave protegida no servidor, limites de uso e revisão profissional.</div><div class="panel"><h3>Simular um pedido</h3><label>O que gostaria de preparar?</label><select id="aiKind"><option>Resumo de um documento fictício</option><option>Rascunho de e-mail ao cliente</option><option>Checklist de documentos</option><option>Lista de tarefas para um caso</option></select><label>Contexto fictício</label><textarea id="aiContext" placeholder="Descreva um cenário fictício, sem dados pessoais..."></textarea><button onclick="simulateAI()">Gerar exemplo demonstrativo</button><div id="aiOutput" style="margin-top:16px"></div></div>`;
+c.innerHTML=html}
+function filterRows(){let q=(document.getElementById('search').value||'').toLowerCase();document.querySelectorAll('#tableArea tr[data-search]').forEach(r=>r.style.display=r.dataset.search.includes(q)?'':'none')}
+const schemas={
+clients:[['name','Nome completo','text',true],['cpf','CPF/CNPJ (demo)','text',false],['phone','Telefone','text',false],['email','E-mail','email',false],['type','Tipo','select: Pessoa física|Empresa',false],['notes','Observações','textarea',false]],
+cases:[['number','Número / referência','text',true],['title','Nome do caso','text',true],['client','Cliente','selectClients',false],['area','Área jurídica','select: Cível|Trabalhista|Previdenciário|Família|Contratos|Criminal|Outra',false],['status','Status','select: Em andamento|Em análise|Aguardando|Concluído|Arquivado',false],['next','Próximo prazo','date',false],['notes','Observações','textarea',false]],
+deadlines:[['title','Compromisso / prazo','text',true],['date','Data','date',true],['time','Hora','time',false],['kind','Tipo','select: Prazo|Audiência|Reunião|Tarefa|Outro',false],['caseNo','Número do caso','text',false],['status','Status','select: Pendente|Confirmado|Concluído|Cancelado',false]],
+tasks:[['title','Tarefa','text',true],['owner','Responsável','text',false],['due','Vencimento','date',false],['priority','Prioridade','select: Baixa|Normal|Alta|Urgente',false],['status','Status','select: Pendente|Em andamento|Concluída',false],['caseNo','Número do caso','text',false]],
+finance:[['description','Descrição','text',true],['client','Cliente / parte','text',false],['kind','Tipo','select: Recebimento|Despesa',false],['amount','Valor em R$','number',true],['due','Vencimento','date',false],['status','Status','select: Pendente|Pago|Atrasado',false]],
+documents:[['name','Nome do documento/modelo','text',true],['type','Tipo','select: Modelo|Contrato|Petição|Procuração|Outro',false],['date','Data','date',false],['notes','Observações','textarea',false]]
+};
+function openModal(type,recordId=null){modalType=type;editId=recordId;let item=recordId?db[type].find(x=>x.id===recordId):{};document.getElementById('modalTitle').textContent=(recordId?'Editar ':'Novo ')+({clients:'cliente',cases:'processo/caso',deadlines:'compromisso',tasks:'tarefa',finance:'lançamento financeiro',documents:'documento/modelo'}[type]);document.getElementById('modalBody').innerHTML='<div class="formgrid">'+schemas[type].map(([key,label,kind,req])=>{let val=item?.[key]??(key==='date'||key==='due'?today():key==='status'?(type==='cases'?'Em andamento':'Pendente'):key==='kind'?(type==='finance'?'Recebimento':'Prazo'):key==='type'?'Pessoa física':'');let field=kind.startsWith('select:')?`<select id="f_${key}">${kind.slice(7).split('|').map(o=>`<option ${o.trim()===val?'selected':''}>${o.trim()}</option>`).join('')}</select>`:kind==='selectClients'?`<select id="f_${key}"><option>${esc(val)}</option>${db.clients.map(c=>`<option>${esc(c.name)}</option>`).join('')}</select>`:kind==='textarea'?`<textarea id="f_${key}">${esc(val)}</textarea>`:`<input id="f_${key}" type="${kind}" value="${esc(val)}" ${req?'required':''}>`;return `<div class="${kind==='textarea'?'wide':''}"><label>${label}${req?' *':''}</label>${field}</div>`}).join('')+'</div>';document.getElementById('modal').classList.add('show')}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+function saveModal(){let x={};for(let [key,label,kind,req] of schemas[modalType]){let el=document.getElementById('f_'+key);x[key]=el.value.trim();if(req&&!x[key]){el.focus();toast('Preencha: '+label);return}}if(modalType==='finance'&&Number(x.amount)<0){toast('Informe um valor válido');return}x.id=editId||id();if(editId){db[modalType]=db[modalType].map(z=>z.id===editId?x:z)}else db[modalType].unshift(x);saveDB();closeModal();render();toast('Registro salvo na demonstração')}
+function del(type,recordId){if(confirm('Excluir este registro da demonstração?')){db[type]=db[type].filter(x=>x.id!==recordId);saveDB();render();toast('Registro excluído')}}
+function exportData(){let blob=new Blob([JSON.stringify({office,exportedAt:new Date().toISOString(),demoOnly:true,data:db},null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='jurisflow-demo.json';a.click();URL.revokeObjectURL(a.href)}
+function simulateAI(){let k=document.getElementById('aiKind').value,ctx=document.getElementById('aiContext').value.trim();document.getElementById('aiOutput').innerHTML=`<div class="panel"><h3>Exemplo ilustrativo — não gerado por IA</h3><p><strong>Tipo:</strong> ${esc(k)}</p><p><strong>Contexto:</strong> ${esc(ctx||'Nenhum contexto informado.')}</p><p>Próximos passos sugeridos para uma futura integração: identificar fatos, separar informações confirmadas de pontos a verificar, preparar uma estrutura inicial e solicitar revisão do advogado antes de utilizar qualquer conteúdo.</p></div>`}
+function toast(s){let t=document.getElementById('toast');t.textContent=s;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2400)}
+</script></body></html>
